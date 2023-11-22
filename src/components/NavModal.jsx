@@ -15,7 +15,7 @@ const NavModal = ({isVisible, onClose}) => {
         }
     
   return (
-    <div className='fixed top-20 inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center ' id="wrapper" onClick={handleClose}
+    <div className='fixed top-20 inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex items-center z-10' id="wrapper" onClick={handleClose}
    >
 
         <motion.div className='fixed bg-white w-[75%] h-full pt-10 pl-4'

@@ -10,7 +10,7 @@ const Hero = () => {
     <section>
   
 
-    <div className="relative bg-gradient-to-tr from-blue-900 to-green-900 h-[450px] w-full -z-20 lg:flex lg:space-x-14">
+    <div className="relative bg-gradient-to-tr from-blue-900 to-green-900 h-[450px] w-full  lg:flex lg:space-x-14">
 
         <img src={BackgroundImage} alt="" className='w-full h-full object-cover absolute mix-blend-overlay opacity-80'/>
    
