@@ -24,7 +24,7 @@ const Hero = () => {
                 Explore our Courses <FontAwesomeIcon icon={faArrowRightLong} />
                 </a>
 
-               <a href="https://wa.me/message/XWCQVZBLJVNMF1" className='self-end mr-5 bg-green-700  h-fit w-fit px-4 py-2 rounded-3xl text-center text-lg hover:bg-green-400 active:scale-125 lg:self-start lg:w-96'>Get a Business website<FontAwesomeIcon icon={faArrowRightLong} />
+               <a href="https://wa.me/message/XWCQVZBLJVNMF1" className='self-end mr-5 bg-green-700  h-fit w-fit px-4 py-2 rounded-3xl text-center text-lg hover:bg-green-400 active:scale-125 lg:self-start lg:w-96'>Explore our Services <FontAwesomeIcon icon={faArrowRightLong} />
                 </a> 
             </div>
             </div>
