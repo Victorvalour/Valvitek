@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     
     <div>
-                <div className='flex justify-between items-center w-full bg-slate-200  h-20 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.73)] lg:h-28'>
+                <div className='flex justify-between items-center w-full bg-slate-200  h-20 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.73)] lg:h-24'>
         <img src={ValvitelLogo} alt="" className='w-28 md:w-32 xl:w-40'/>
 
 <div className='hidden text-blue-900 italic space-x-3 text-xl md:flex xl:text-2xl xl:mr-32 2xl:mr-72 xl:space-x-5 2xl:space-x-9'>
