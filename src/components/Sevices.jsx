@@ -13,7 +13,7 @@ const Sevices = () => {
          </div>
 
          <div className='flex flex-col items-center px-6 gap-10'>
-        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-black shadow-[0px_0px_10px_1px_rgba(0,0,0,0.79)]'>
+        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.6)]'>
         
       
             <img src={WebDevImg} alt="" />
@@ -29,7 +29,7 @@ const Sevices = () => {
           
         </div>
 
-        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-black shadow-[0px_0px_10px_1px_rgba(0,0,0,0.79)]'>
+        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.6)]'>
         
       
             <img src={WebDevImg} alt="" />
@@ -46,7 +46,7 @@ const Sevices = () => {
           
         </div>
 
-        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-black mb-10 shadow-[0px_0px_10px_1px_rgba(0,0,0,0.79)]'>
+        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-gray-200 mb-10 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.6)]'>
         
       
         <img src={WebDevImg} alt="" />
