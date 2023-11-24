@@ -18,10 +18,10 @@ const Sevices = () => {
       
             <img src={WebDevImg} alt="" />
             <div className='flex flex-col px-2 pb-6 pt-6'>
-            <p className='font-ibmPlexMono text-3xl font-semibold mb-5'>
+            <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
              WEB DEVELOPMENT
             </p>
-            <p className='text-lg mb-4'>We build professional and modern websites for clients and businesses all over the world.</p>
+            <p className=' mb-4'>We build professional and modern websites for clients and businesses all over the world.</p>
             <button href="" className='self-center bg-blue-800 text-white text-xl w-fit h-fit py-2 px-3 rounded-lg'>
                 Get a website
                 </button>
@@ -34,10 +34,10 @@ const Sevices = () => {
       
             <img src={WebDevImg} alt="" />
             <div className='flex flex-col px-2 pb-6 pt-6'>
-            <p className='font-ibmPlexMono text-3xl font-semibold mb-5'>
+            <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
              MOBILE APP DEVELOPMENT
             </p>
-            <p className='text-lg mb-4'>Our developers are on standby, and ready to deliver to you premiem mobile application to your taste and satisfaction.</p>
+            <p className=' mb-4'>Our developers are on standby, and ready to deliver to you premiem mobile application to your taste and satisfaction.</p>
 
             <button href="" className='self-center bg-blue-800 text-white text-xl w-fit h-fit py-2 px-3 rounded-lg'>
                 Build an App
@@ -51,10 +51,10 @@ const Sevices = () => {
       
         <img src={WebDevImg} alt="" />
         <div className='flex flex-col px-2 pb-6 pt-6'>
-        <p className='font-ibmPlexMono text-3xl font-semibold mb-5'>
+        <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
          DIGITAL COURSES
         </p>
-        <p className='text-lg mb-4'>If you're looking to start a career in tech, Valvitek has got you covered. We offer high-end digital courses and one-on-one mentorship in various niche. <br />Including: <br />
+        <p className=' mb-4'>If you're looking to start a career in tech, Valvitek has got you covered. We offer high-end digital courses and one-on-one mentorship in various niche. <br />Including: <br />
         FullStack Web development, Mobile app development, Data analysis, Cyber security, Digital marketing etc.</p>
         <button href="" className='self-center bg-blue-800 text-white text-xl w-fit h-fit py-2 px-3 rounded-lg'>
             Get a website
