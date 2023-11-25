@@ -13,7 +13,7 @@ const Sevices = () => {
          </div>
 
          <div className='flex flex-col items-center px-6 gap-10'>
-        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.6)]'>
+        <div className='flex flex-col items-center bg-slate-100 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.5)]'>
         
       
             <img src={WebDevImg} alt="" />
@@ -21,6 +21,7 @@ const Sevices = () => {
             <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
              WEB DEVELOPMENT
             </p>
+            <div className='w-full h-1 bg-slate-300 mb-2'></div>
             <p className=' mb-4'>We build professional and modern websites for clients and businesses all over the world.</p>
             <button href="" className='self-center bg-blue-800 text-white text-xl w-fit h-fit py-2 px-3 rounded-lg'>
                 Get a website
@@ -29,7 +30,7 @@ const Sevices = () => {
           
         </div>
 
-        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.6)]'>
+        <div className='flex flex-col items-center bg-slate-100 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.5)]'>
         
       
             <img src={WebDevImg} alt="" />
@@ -37,6 +38,7 @@ const Sevices = () => {
             <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
              MOBILE APP DEVELOPMENT
             </p>
+            <div className='w-full h-1 bg-slate-300 mb-2'></div>
             <p className=' mb-4'>Our developers are on standby, and ready to deliver to you premiem mobile application to your taste and satisfaction.</p>
 
             <button href="" className='self-center bg-blue-800 text-white text-xl w-fit h-fit py-2 px-3 rounded-lg'>
@@ -46,7 +48,7 @@ const Sevices = () => {
           
         </div>
 
-        <div className='flex flex-col items-center bg-teal-200 rounded-xl overflow-hidden border-[1px] border-gray-200 mb-10 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.6)]'>
+        <div className='flex flex-col items-center bg-slate-100 rounded-xl overflow-hidden border-[1px] border-gray-200 mb-10 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.5)]'>
         
       
         <img src={WebDevImg} alt="" />
@@ -54,10 +56,11 @@ const Sevices = () => {
         <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
          DIGITAL COURSES
         </p>
+        <div className='w-full h-1 bg-slate-300 mb-2'></div>
         <p className=' mb-4'>If you're looking to start a career in tech, Valvitek has got you covered. We offer high-end digital courses and one-on-one mentorship in various niche. <br />Including: <br />
         FullStack Web development, Mobile app development, Data analysis, Cyber security, Digital marketing etc.</p>
         <button href="" className='self-center bg-blue-800 text-white text-xl w-fit h-fit py-2 px-3 rounded-lg'>
-            Get a website
+            Get Our Courses
             </button>
         </div>
       
