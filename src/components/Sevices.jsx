@@ -1,6 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import WebDevImg from '../images/web dev img.jpg'
+import AppsImg from '../images/Apps Image.jpg'
+import PersonProgrammingImg from '../images/Teaching Programming.jpg'
+import WebsiteImage from '../images/Website Image.jpg'
+import SpecialOffer from '../images/SpecialOffer.png'
+import PersonCoding from '../images/Person Coding.jpg'
 
 const Sevices = () => {
   return (
@@ -13,10 +18,30 @@ const Sevices = () => {
          </div>
 
          <div className='flex flex-col items-center px-6 gap-10'>
+
+         <div className='flex flex-col items-center bg-slate-100 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.5)] relative'>
+        
+      <img src={SpecialOffer} alt="" className='absolute w-36 right-0 -top-8'/>
+        <img src={PersonCoding} alt="" />
+        <div className='flex flex-col px-2 pb-6 pt-6'>
+        <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
+         FULLSTACK WEB DEVELOPMENT COURSE
+        </p>
+        <p className=' mb-4'>Price:  N5,000</p>
+        <div className='w-full h-1 bg-slate-300 mb-2'></div>
+        <p className=' mb-4'>Learn how to build professional/world class websites using modern development tools like HTML/CSS/Javascript, React JS, Mongo DB, Express, Node JS, PHP etc</p>
+
+        <a href="https://flutterwave.com/pay/edpgyxh1eoqp" className='self-center bg-blue-800 text-white text-xl w-fit h-fit py-2 px-3 rounded-lg'>
+            Join the training
+            </a>
+        </div>
+      
+    </div>
+
         <div className='flex flex-col items-center bg-slate-100 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.5)]'>
         
       
-            <img src={WebDevImg} alt="" />
+            <img src={WebsiteImage} alt="" />
             <div className='flex flex-col px-2 pb-6 pt-6'>
             <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
              WEB DEVELOPMENT
@@ -33,7 +58,7 @@ const Sevices = () => {
         <div className='flex flex-col items-center bg-slate-100 rounded-xl overflow-hidden border-[1px] border-gray-200 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.5)]'>
         
       
-            <img src={WebDevImg} alt="" />
+            <img src={AppsImg} alt="" />
             <div className='flex flex-col px-2 pb-6 pt-6'>
             <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
              MOBILE APP DEVELOPMENT
@@ -51,7 +76,7 @@ const Sevices = () => {
         <div className='flex flex-col items-center bg-slate-100 rounded-xl overflow-hidden border-[1px] border-gray-200 mb-10 shadow-[0px_0px_8px_0px_rgba(0,0,0,0.5)]'>
         
       
-        <img src={WebDevImg} alt="" />
+        <img src={PersonProgrammingImg} alt="" />
         <div className='flex flex-col px-2 pb-6 pt-6'>
         <p className='font-ibmPlexMono text-2xl font-semibold mb-5'>
          DIGITAL COURSES
