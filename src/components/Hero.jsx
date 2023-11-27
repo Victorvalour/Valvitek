@@ -12,7 +12,7 @@ const Hero = () => {
 
     <div className="relative bg-gradient-to-tr from-blue-900 to-green-900 h-[450px] w-full  lg:flex lg:space-x-14">
 
-        <img src={BackgroundImage} alt="" className='w-full h-full object-cover absolute mix-blend-overlay opacity-80'/>
+        <img src={BackgroundImage} alt="" className='w-full h-full object-cover absolute mix-blend-overlay opacity-50'/>
    
         <div className=' text-white pt-8 pl-3'>
             <p className='text-5xl font-bold lg:text-7xl '>Technological <br className='hidden lg:block' />   Solutions</p>
