@@ -69,8 +69,8 @@ const Register = () => {
        <div className='bg-white w-fit h-fit mx-auto rounded-2xl'> <img src={ValvitekLogo} alt="" className='w-28 mx-auto'/>
        </div>
         </div>
-       <p className='text-2xl  ml-6 font-semibold'> Welcome &#127881;</p>
-       <p className='text-lg mb-2 ml-6'>
+       <p className='text-2xl mt-4 ml-6 font-semibold text-center'> Welcome &#127881;</p>
+       <p className='text-lg mb-4 ml-6'>
         Congratulations on making your first step on your <span className='font-semibold'>Tech</span> journey.
        </p>
   

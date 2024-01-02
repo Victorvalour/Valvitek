@@ -58,18 +58,18 @@ const JoinGroupModal = ({isVisible, onClose}) => {
         <div className='w-[80%] flex flex-col mb-5'>
 
 
-          <div className=' self-center text-lg'><p>CONGRATULATIONS!!!</p></div>
+          <div className=' self-center text-xl mb-2'><p>WELL DONE!!!</p></div>
           <motion.p className="p"
           initial={{ x : 70 }}
           animate={{ x : 110 }}
           transition={{ duration: 1, repeat: Infinity, repeatType: 'reverse' }}
-          >&#129321;</motion.p>
-          <p className='leading-4 mb-4'>Click on the button below to Join our Community and start your journey.</p>
+          >&#129321; &#129321;</motion.p>
+          <p className='leading-4 mb-6 mt-2 text-center text-lg'>Click on the button below to Join our Community on Whatsapp, and start your journey.</p>
           
 
 
 <a  href='https://chat.whatsapp.com/KwPuq600B7TLGHIIHvonNP'
-    className='bg-blue-700  h-fit py-2 text-white text-center text-xl active:bg-blue-500 active:text-2xl'><div className='flex justify-center items-center'><FontAwesomeIcon icon={faWhatsapp} /> <p className='ml-2'>Join Group</p> </div></a>
+    className='bg-blue-700  h-fit py-2 text-white text-center text-2xl active:bg-blue-500 active:text-2xl'><div className='flex justify-center items-center'><FontAwesomeIcon icon={faWhatsapp} /> <p className='ml-2'>Join Group</p> </div></a>
 
 
 
