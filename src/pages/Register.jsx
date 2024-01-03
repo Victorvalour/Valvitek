@@ -16,9 +16,15 @@ const Register = () => {
        !showModal ? setShowModal(true) : setShowModal(false)
     }
   
+    const [student, setStudent] = useState(
+       {
+          FirstName: '', LastName: '', Number: '', Email: '', Course: ''
+       }
+    )
+
     const [phoneNumber, setPhoneNumber] = useState('');
       const [type, setAccountType] = useState('');
-      const [name, setFullName] = useState('');
+    
     
   
 
@@ -32,34 +38,60 @@ const Register = () => {
        
       ]
       const navigate = useNavigate()
-  
 
-    
-      const handleSubmit = (e) => {
+
+      
+      const handleSubmit = async (e) => {
+        const {FirstName, LastName, Number, Email, Course} = student
           e.preventDefault();
 
-          toast.success('Registration Successful', {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            });
+
+          const options = {
+            method: 'POST',
+            headers: { 
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              FirstName, LastName, Number, Email, Course
+            })
+          }
+      const res = await fetch('https://valvitek-46729-default-rtdb.firebaseio.com/Students.json', options)
+      console.log(res)
+      if(res) {
+        
+        toast.success('Registration Successful', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          });
+      } else {
+        alert("An Error Occured")
+      }
+
 
             popLinkModal()
          /* const fullName = firstName + ' ' + lastName;
           setFullName(fullName);
-
-  
-        console.log(userData)*/
-      
-        }
+              */
+         
+          }
+      const [course, setCourse] = useState()
+       
+          let name, value
+          console.log(student)
+        const handleData = (e) => {
+          name = e.target.name;
+          value = e.target.value;
+          setStudent({...student, [name]: value});
           
-  
-  
+        
+      }
+    
     return (
       <div className='py-2 px-2 md:mx-[15%] xl:mx-[25%]'>
 
@@ -75,8 +107,9 @@ const Register = () => {
        </p>
   
        <form 
+            method='POST'
                 onSubmit={handleSubmit}
-              className='w-[90%] rounded-lg bg-teal-100 mx-auto'>
+              className='w-[90%] rounded-lg bg-gray-200 mx-auto'>
                   <p className='text-3xl font-semibold text-center'>Basic Info</p>
                   <p className='text-lg text-center mb-6'>Fill in your details below</p>
   
@@ -85,28 +118,40 @@ const Register = () => {
   
               <label htmlFor="">First name</label>
                   <input type="text"
+                  value={student.firstName}
                    placeholder='First Name'
-                  
+                  name='FirstName'
+                  required
+                  onChange={handleData}
                   className='pl-2 h-12 rounded-md text-lg my-2' />
                  
   
                     <label htmlFor="">Last Name</label>
                   <input type="text" 
+                  value={student.lastName}
                   placeholder='Last Name'
+                  name='LastName'
+                  required
+                  onChange={handleData}
                   className='pl-2 h-12 rounded-md text-lg my-2' />
   
                     <label htmlFor="">Phone number (Whatsapp) </label>
                       <input type="text"
+                      value={student.Number}
                        placeholder='Phone Number'
-                       value={phoneNumber}
-                       onChange={e => setPhoneNumber(e.target.value)}
+                       name='Number'
+                       required
+                       onChange={handleData}
                       className='pl-2 h-12 rounded-md text-lg mb-2' />
                      
   
                     <label htmlFor="">Email address</label>
                   <input type="email" 
+                  value={student.Email}
                   placeholder='Email Address'
-                  onChange={e => setEmailAddress(e.target.value)}
+                  name='Email'
+                  required
+                  onChange={handleData}
                   className='pl-2 h-12 rounded-md text-lg mb-2' />
                     
   
@@ -114,8 +159,9 @@ const Register = () => {
 
                     <Select 
                     className='pl-2 h-12 rounded-md text-lg mb-2 bg-white'
-                    name='Account Type'
-                  
+                    name='Course'
+                    value={student.Course}
+                    onChange={(values) => setStudent({...student, Course: values[0].label})}
                     options={courses}>
                     </Select>
                 
